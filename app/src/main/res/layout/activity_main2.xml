@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity2" android:orientation="vertical">
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/name"
+            android:hint="Entrada do nome"
+            android:layout_gravity="center" android:gravity="center"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/valor"
+            android:hint="Entrada do valor"
+            android:layout_gravity="center" android:gravity="center"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <RadioButton
+                    android:text="Dólar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/btdolar" android:layout_weight="1"/>
+            <RadioButton
+                    android:text="Libra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/btlibra" android:layout_weight="1"/>
+            <RadioButton
+                    android:text="Euro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/bteuro" android:layout_weight="1"/>
+        </RadioGroup>
+    </LinearLayout>
+    <TextView
+            android:text="Aguarde sua resposta!"
+            android:layout_width="match_parent"
+            android:layout_height="132dp" android:id="@+id/res" android:gravity="center"/>
+    <Button
+            android:text="botão - voltar primeira tela"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/btvoltar"/>
+</LinearLayout>
